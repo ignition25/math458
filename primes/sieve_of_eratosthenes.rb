@@ -1,25 +1,4 @@
 #!/usr/bin/ruby
-# class SieveInt
-#     @eliminated = false
-#     def initialize(value)
-#         @value = value
-#     end
-
-#     def value
-#         return @value
-#     end
-
-#     def eliminate
-#         @eliminated = true
-#     end
-
-#     def is_possible_prime?
-#         return !@eliminated
-#     end
-# end
-# def sieve_builder(max)
-#     a = Array.new(max) { |index| SieveInt(index)}
-# end
 
 def sieve_of_eratosthenes max
     max -= 1
@@ -43,17 +22,6 @@ def sieve_of_eratosthenes max
     return sum
 end
 
-# function modular_pow(base, exponent, modulus)
-#     Assert :: (modulus - 1) * (base mod modulus) does not overflow base
-#     result := 1
-#     base := base mod modulus
-#     while exponent > 0
-#         if (exponent mod 2 == 1):
-#            result := (result * base) mod modulus
-#         exponent := exponent >> 1
-#         base := (base * base) mod modulus
-#     return result
-
 def fast_power base, exponent, modulus
     result = 1
     base = base % modulus
@@ -76,9 +44,5 @@ def find_a g, big_a, p
     end
 end
 
-
-# puts(sieve_of_eratosthenes ARGV[0].to_i)
-
-# puts fast_power 2, 871, 1375
 puts find_a 2, 974, 1373
 

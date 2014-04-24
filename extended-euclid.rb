@@ -1,9 +1,9 @@
 # gcd(a,b)
 # g = a
-g = ARGV[0].to_i
+g = ARGV[0].to_i # Command Line arg 1
 a = g
 # y = b
-y = ARGV[1].to_i
+y = ARGV[1].to_i # Command Line arg 2
 b = y
 u = 1
 x = 0
