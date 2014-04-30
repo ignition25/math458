@@ -36,13 +36,15 @@ def fast_power base, exponent, modulus
 end
 
 def find_a g, big_a, p
-    for i in 0..(p - 1)
-        temp = fast_power g, i, p
+    for i in -(p - 1)..0
+        temp = fast_power g, i.abs, p
         if temp == big_a
-            return i
+            return i.abs
         end
     end
 end
 
-puts find_a 2, 974, 1373
+puts find_a 7, 6466570642616143345, 18446744073709558081
+
+
 
