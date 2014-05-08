@@ -44,7 +44,3 @@ def find_a g, big_a, p
     end
 end
 
-puts find_a 7, 6466570642616143345, 18446744073709558081
-
-
-
